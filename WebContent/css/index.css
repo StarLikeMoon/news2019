@@ -1,0 +1,62 @@
+/*index.jsp中页面主体部分用到的css样式*/
+
+
+/*
+	margin:和其他盒子之间的间距，又称为外边距
+	padding:边距离内容的填充距离
+	height:高度
+	width:宽度
+	list-style: none  去掉list的原本样式
+	float: left  规定图片向左浮动
+	text-decoration：文本修饰
+	
+	overflow:hidden;      超出设置长宽的部分隐藏，防止长度溢出
+	white-space:nowrap;   设置强制不换行，防止新闻标题长度溢出
+*/
+
+.main{
+	width: 1200px;
+	height:530px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.listitem{
+	width:388px;
+	height: 253px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #B8E5F2;
+}
+
+.listitem p{
+	height: 37px;
+	background-color:#B8E5F2;
+	line-height: 37px;
+	color: #053B69;
+	padding-left: 10px;
+}
+
+.listitem ul{
+	list-style: none;
+}
+
+.listitem ul li{
+	border-bottom:dotted 1px #eee;
+	overflow:hidden;     
+	white-space:nowrap;
+}
+
+
+.listitem ul li a{
+	text-decoration: none;
+	line-height:30px;
+	color: #333;
+	padding-left:10px;
+}
+
+.main div.last{
+	width:398px;
+	margin-right: 0;
+}

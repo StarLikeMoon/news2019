@@ -1,0 +1,127 @@
+﻿/*index.jsp中的pptbox图片轮播用到的css样式*/
+
+
+/*
+	margin:和其他盒子之间的间距，又称为外边距
+	padding:边距离内容的填充距离
+	height:高度
+	width:宽度
+	position：对象的定位方式
+	overflow: hidden 溢出异常，如果钙元素超出了给定的范围，超出部分会隐藏，不占位
+	display:  改变元素的样式属性
+	list-style: none  去掉list的原本样式
+	left：左边缘偏移
+	float: left  规定图片向左浮动
+	top:上边缘偏移
+	background-color:背景颜色
+	background-image：设置背景图片
+	background-position：背景图在对象中的偏移
+	cursor: pointer  设定光标浮动的样式，pointer为一只手
+	z-index：设置堆叠顺序，值越大越靠前
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+			}
+			
+.pptbox{
+	width: 400px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+			
+.pptbox  .innerwrapper{
+	width:2400px;/*当增加了li之后，大盒子的宽度也要相应的增加 这里增加了两个li，每个400，所以ul 从原来的1600变成了2400*/
+	height: 100px;
+	list-style: none;
+	position: absolute;
+	left: -400px;
+}
+			
+.innerwrapper li{
+	width:400px;
+	height:100px;
+	float: left;
+}
+
+.innerwrapper li a{
+	display: block;
+}
+			
+.innerwrapper li a img{
+	width: 400px;
+	height:100px;
+	display:block;
+}
+			
+.btnleft{
+	width: 20px;
+	height: 50px;
+	position: absolute;
+	left:0;
+	top:25px;
+	background-color: black;
+	background-image:url(../img/nav.png);
+	background-position: -10px 4px;
+	cursor: pointer;
+	z-index: 100;
+}
+			
+.btnright{
+	width: 20px;
+	height: 50px;
+	position: absolute;
+	right:0;
+	top:25px;
+	background-color: black;
+	background-image:url(../img/nav.png);
+	background-position: -54px 4px;
+	cursor: pointer;
+	z-index: 100;
+	
+}
+
+/*控制按钮开始*/
+
+/*
+	width:宽度
+	position：对象的定位方式
+	left：左边缘偏移
+	bottom：下边缘偏移
+	list-style: none  去掉list的原本样式
+	background-color:背景颜色
+	float: left  规定图片向左浮动
+	margin-right：右侧外边距大小
+	text-align:文本水平对齐方式
+	border-radius:10px  对盒子添加圆角
+	cursor: pointer  设定光标浮动的样式，pointer为一只手
+*/
+
+.controls{
+	width:96px;
+	position: absolute;
+	left:152px;
+	bottom:10px;
+	list-style: none;
+}
+.controls li{
+	width: 20px;
+	height:20px;
+	background-color: gold;
+	float: left;
+	margin-right:2px;
+	text-align: center;
+	border-radius:10px ;
+	cursor: pointer;
+}
+
+.controls li.current
+{
+	background-color:aqua;
+	color: brown;
+}
+
+/*控制按钮结束*/

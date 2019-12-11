@@ -1,0 +1,71 @@
+/*newsview.jsp中页面主体部分用到的css样式*/
+
+
+/*
+	margin:和其他盒子之间的间距，又称为外边距
+	padding:边距离内容的填充距离
+	height:高度
+	width:宽度
+	line-height: 行高
+	list-style: none  去掉list的原本样式
+	float: left  规定图片向左浮动
+	text-decoration：文本修饰
+*/
+
+.main{
+	width: 1200px;
+	margin: 0 auto;
+	min-height:500px;
+	position: relative;
+}
+
+.path{
+	height: 30px;
+	border-bottom: solid 1px #EEEEEE;
+	line-height: 30px;
+	color: #333;
+}
+
+.leftnav{
+	width: 222px;
+	min-height: 200px;
+	padding-top: 10px;
+	float: left;
+}
+
+.rightlist{
+	width:940px;
+	min-height:200px;
+	border: solid 1px #eee;
+	padding: 10px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.leftnav a{
+	display: block;
+	text-decoration: none;
+	color: #333;
+	height: 36px;
+	line-height: 36px;
+	border: solid 1px #eee;
+	border-top:0;
+	padding-left: 10px;
+}
+
+.rightlist h3{
+	text-align: center;
+	line-height: 50px;
+}
+
+.rightlist p.info{
+	text-align: center;
+	line-height: 30px;
+}
+
+.contents p{
+	text-indent: 2em;
+	line-height: 28px;
+}

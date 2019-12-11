@@ -1,0 +1,108 @@
+/*admin中相关jsp页面用到的css样式*/
+
+
+/*
+	margin:和其他盒子之间的间距，又称为外边距
+	padding:边距离内容的填充距离
+	height:高度
+	width:宽度
+	background-color:背景颜色
+	text-decoration:文本装饰 none是没有
+	line-height：行高
+	display: block  改变元素的样式属性
+	text-align:文本水平对齐方式
+	background-image：设置背景图片
+	background-repeat：背景图平铺方式
+	background-position：背景图在对象中的偏移
+	font-size：字体大小
+	line-height：行高
+*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:"΢���ź�";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+h3{
+	
+	line-height: 38px;
+}
+
+.tb{
+	width:calc(100% - 10px);
+	border-collapse: collapse;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.tb td{
+	border: solid 1px #eee;
+	height:30px;
+	padding-left: 5px;
+}
+
+.tb td.lable{
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+
+.tb input{
+	width:300px;
+	height: 20px;
+}
+
+textarea{
+	width: 650px;
+	height:200px;
+	margin: 3px 0;
+}
+.path{
+	height: 30px;
+	margin-left: 5px;
+	line-height: 30px;
+	color: #333;
+}
+
+.tblist tr:hover{
+	background-color: #8A2BE2;
+	color: white;
+}
+
+.tblist tr:hover a{
+	
+	color: white;
+}
+
+.tblist td{
+	text-align: center;
+}
+
+.tblist td.tdleft{
+	text-align: left;
+}
+
+.tblist td a{
+	margin-left:5px;
+}
+
+#btnsave{
+	width: 80px;
+	height: 26px;
+}

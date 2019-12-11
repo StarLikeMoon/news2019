@@ -1,0 +1,67 @@
+/*index.jsp中用到的css样式*/
+
+
+/*
+	margin:和其他盒子之间的间距，又称为外边距
+	padding:边距离内容的填充距离
+	height:高度
+	width:宽度
+	background-color:背景颜色
+	text-decoration:文本装饰 none是没有
+	line-height：行高
+	display: block  改变元素的样式属性
+	text-align:文本水平对齐方式
+	background-image：设置背景图片
+	background-repeat：背景图平铺方式
+	background-position：背景图在对象中的偏移
+	font-size：字体大小
+	line-height：行高
+*/
+
+*{
+	margin: 0;      /*设置为0是为了让内容填充满整个盒子*/
+	padding: 0;
+	font-family: "微软雅黑", "Arial";
+}
+.header{
+	height: 292px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.nav{
+	height: 38px;
+	background-color:#F3AD5F;
+}
+.nav a{
+	text-decoration: none; /*把超链接的样式去掉*/
+	color: #fff;
+	line-height:38px;
+	padding: 0 15px;   /*上下内边距为0，左右内边距为15px*/
+}
+.ppt{
+	padding-top:3px;  /*上内边距为3px*/
+} 
+.ppt img{
+	display: block;   /*将.ppt的img后代元素的属性改为块级，独占容器中的一行*/
+}
+
+.footer{
+	width: 1200px;
+	height: 200px;
+	background-color:#B8E5F2;
+	margin: 0 auto;
+	text-align: center;    /*文本水平居中*/
+	color:#053B69;
+	background-image: url(../img/logo.gif);
+	background-repeat: no-repeat;   
+	background-position: 50px 50px;
+}
+
+.footer p{
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.firstline{
+	padding-top: 50px;
+}
